@@ -1,10 +1,10 @@
 package com.example.caching.service;
 
-import com.example.caching.model.Document;
+import com.example.caching.dto.DocumentDTO;
 
 public interface DocumentService {
 
-    Document createDocument(Document document);
+    DocumentDTO createDocument(DocumentDTO document);
 
-    Document getDocument(String id);
+    DocumentDTO getDocument(String documentId,String tenantId);
 }
