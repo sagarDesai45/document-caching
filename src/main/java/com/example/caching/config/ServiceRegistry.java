@@ -23,7 +23,7 @@ public class ServiceRegistry {
                 new ConsulClientOptions().setHost(host).setPort(port));
 
         client.registerServiceAndAwait(
-                new ServiceOptions().setPort(documentPort).setAddress("localhost")
+                new ServiceOptions().setPort(documentPort).setAddress(host)
                         .setName(documentCaching).setId(documentCaching));
 
     }
